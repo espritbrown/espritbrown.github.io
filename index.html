@@ -49,10 +49,29 @@
 	
 
 						<!-- Posts -->
+						 <!-- JavaScript Exercise for demonstrate string interpolation with an input box and button combination-->
+<section class="posts">
+    <h3>What is your name?</h3>
+    <p id="greeting">Welcome to my portfolio!</p>
+    <input id="usernameInput" class="input-spaced" type="text" placeholder="Enter your name">
+    <button id="setGreetingBtn" type="button">Set Greeting</button>
+
+<script>
+    function setGreeting() {
+    const input = document.getElementById('usernameInput');
+    const greeting = document.getElementById('greeting');
+    const name = (input?.value || '').trim();
+    greeting.textContent = name ? `Welcome to my portfolio, ${name}!` 
+                                : 'Welcome to my portfolio!';
+    }
+    document.getElementById('setGreetingBtn').addEventListener('click',
+    setGreeting);
+</script>
+</section>
 							<section class="posts">
 								<article>
 									<header>
-										<h2><a href="#">What will you find<br />
+										<h2><a>What will you find<br />
 										on this site?</a></h2>
 									</header>
 									<ul style="font-size: medium;">
@@ -64,7 +83,7 @@
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">Professional Journey<br /></a></h2>
+										<h2><a>Professional Journey<br /></a></h2>
 									</header>
 									<ol>
 										<li>Started university 2023</li>
@@ -74,62 +93,62 @@
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">WHO AM I?<br /></a></h2>
+										<h2><a href="about.html">WHO AM I?<br /></a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/Rectangle photo with rounded courners of Student Teacher Esprit Brown smiling at the camera.png" alt="Photo of Esprit Brown smiling at the camera" /></a>
+									<a href="about.html"><img src="images/Rectangle photo with rounded courners of Student Teacher Esprit Brown smiling at the camera.png" alt="Photo of Esprit Brown smiling at the camera" width="300px" /></a>
 									<p>Passionate about creating a classroom environment where every student feels empowered to succeed and thrive.</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="about.html" class="button">Learn more</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">MY TEACHING PHILOSOPHY<br /></a></h2>
+										<h2><a href="teaching.html">MY TEACHING PHILOSOPHY<br /></a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/philosophyTeachingQuote.jpeg" alt="Quote- students dont care how much you know until you know how much you care: John Maxwell" /></a>
+									<a href="teaching.html" class="image fit"><img src="images/philosophyTeachingQuote.jpeg" alt="Quote- students dont care how much you know until you know how much you care: John Maxwell" /></a>
 									<p>What matters is that students gainconfidence as creators and problem solvers.</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="teaching.html" class="button">Learn more</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">PEOJECTS IVE MADE<br /></a></h2>
+										<h2><a href="projects.html">PROJECTS IVE MADE<br /></a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/FoodProject_AdeleMerchPackagedCaramelChocolateRecord.jpeg" alt="One of Esprits projects - Adele chocolate record" /></a>
+									<a href="projects.html"><img src="images/FoodProject_AdeleMerchPackagedCaramelChocolateRecord.jpeg" alt="One of Esprits projects - Adele chocolate record" width="300px"/></a>
 									<p>TECH213 - Food Industries Food design project</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="projects.html" class="button">Learn more</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">RESOURCES<br /></a></h2>
+										<h2><a href="resources.html">RESOURCES<br /></a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/" alt="Image of avalaible resources" /></a>
+									<a href="resources.html"><img src="images/imageOfAvaiableResources.png" alt="Image of avalaible resources" width="400px" /></a>
 									<p>The following resources are provided so that you can download and adapt for your work.</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="resources.html" class="button">Learn more</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">RESUME<br /></a></h2>
+										<h2><a href="resume.html">RESUME<br /></a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/ResumeThumbNail.png" alt="Image of resume" /></a>
+									<a href="resume.html"><img src="images/ResumeThumbNail.png" alt="Image of resume" width="200px"/></a>
 									<p>This document outlines my professional teaching experiences to date.</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="resume.html" class="button">Learn more</a></li>
 									</ul>
 								</article>
 								<article>
 									<header>
-										<h2><a href="#">CONTACT<br /></a></h2>
+										<h2><a href="contact.html">CONTACT<br /></a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/" alt="Image of contact page" /></a>
+									<a href="contact.html" class="image fit"><img src="images/contactpage.png" alt="Image of contact page" /></a>
 									<p>This page allows you to get in contact with me!</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="contact.html" class="button">Learn more</a></li>
 									</ul>
 								</article>
 							</section>

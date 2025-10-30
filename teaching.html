@@ -38,23 +38,76 @@
 				<div id="main">
 <!-- This is the main content area for my page -->
     <main>
-        <h2>My Teaching Philosophy</h2>
+        <h2 style="text-align: center;">My Teaching Philosophy</h2>
+ <!-- JavaScript Excersie for using arrays, while loop, and objects for a time of day and greeting-->
+                 <section class="section">
+                    <h2>Teaching Philosophy Quote</h2>
+                    <p id="timeGreeting">Type Creative, respect, or growth.</p>
+                    <input id="timeInput" class="input-spaced" type="text" placeholder="e.g. creative">
+                    <button id="timeBtn" type="button">Set Greeting</button>
+                </section>
+                <script>
+                    // Event listener for the button
+                    document.getElementById("timeBtn").addEventListener("click", () => {
+
+                        // Normalise the input (lowercase + trim spaces)
+                        const userInput = document.getElementById("timeInput").value.toLowerCase().trim();
+
+                        // Output paragraph
+                        const out = document.getElementById("timeGreeting");
+
+                        // Reset styles each time
+                        out.classList.remove('time-ok', 'time-error');
+
+                        // Array of valid time keywords
+                        const validTimes = ["creative", "respect", "growth"];
+
+                        // Object mapping time key words to greetings
+                        const greetings = {
+                            creative:   "creativity - You believe learning thrives through imagination.",
+                            respect: "respect - You value inclusive, respectful classrooms.",
+                            growth:   "growth - You focus on progress over perfection."
+                        };
+
+                        // --- While Loop ---
+                        let i = 0;
+                        let found = false;
+
+                        while (i < validTimes.length) {
+                            if (userInput === validTimes[i]) {
+                                // match found addEventListener
+                                out.textContent = greetings[userInput];
+                                out.classList.add('time-ok');
+                                found = true;
+                                break; // stop loop once match is found
+                            }
+                            i++;
+                        }
+
+                        // If no valid match is found 
+                        if (!found) {
+                            out.textContent = "Invalid input. try typing morning, afternoon, or evening.";
+                            out.classList.add('time-error');
+                        }
+                    });
+                </script>
+
         <!-- This section is focused on my teaching practice -->
         <section>
             <section class="section">
-                <div class="embed-video">
+                <div class="embed-video" style="text-align: center;">
                     <video controls width="300">
-                        <source src="media/JoyfulMusic.mp3">
+                        <source src="media/JoyfulMusic.mp3" >
                         Your browser does not support the video tag.
                     </video>
-            <p>This music you hear represents the atmosphere I strive to create in my classroom: welcoming, inspiring, and full of possibility.</p>
+            <p style="text-align: center;">This music you hear represents the atmosphere I strive to create in my classroom: welcoming, inspiring, and full of possibility.</p>
                 </div>
                 </section>
             <p>For as long as I can remember, I’ve been drawn to teaching—not just the idea of sharing knowledge, but the chance to connect with people and help them discover what they’re capable of. The more I grow as an educator, the more I realise teaching is about so much more than skills or grades. It’s about building relationships, creating safe and inclusive spaces, and giving students the tools to learn and grow on their own.</p>
             <p>I believe every student can succeed if they’re given the right opportunities, and part of my role is to get to know who they are—their interests, their strengths, their challenges—and use that to help them connect to the material. I want students to see themselves in the work we do, whether that’s through projects that reflect their lives, creative expression, or tackling real-world problems that matter to them. </p>
             <p>In my classes, whether I’m teaching tech mandatory, food tech, industrial tech or design & tech. I try to make learning hands on, iterative, and flexible. Mistakes aren’t failures; they’re part of the process. What matters is that students gain confidence as creators and problem solvers. Like Noam Chomsky once said, “Education is really aimed at helping students get to the point where they can learn on their own.” That’s what I want for my students: to leave knowing they can keep growing, questioning, and building long after the class ends.</p>
                 <div class="visual-quote">
-                    <img src="images/philosophyTeachingQuote.jpeg" alt="visual teaching quote - 'Students don't care how much you know until they know how much you care - John C. Maxwell" width="500">
+                    <img src="images/philosophyTeachingQuote.jpeg" alt="visual teaching quote - 'Students don't care how much you know until they know how much you care - John C. Maxwell" width="500" style="float: right; margin: 0 0 2rem 2rem; top: 0.75rem;">
                 </div>
             <p>At the same time, I know I’m always learning too,through research, industry collaboration, and, most importantly, from my students. Nothing ever goes exactly as planned, and that’s okay. The best moments in teaching often come from adapting, listening, and being open to where curiosity takes us.</p>
             <p>For me, teaching is about care. It’s about showing students that they belong, that their voices matter, and that they can make a difference. Like John C. Maxwell said, “Students don’t care how much you know until they know how much you care.” I want every student to leave my classroom not just with knowledge, but with curiosity, purpose, and the belief that they have something meaningful to contribute to the world.</p>
@@ -72,5 +125,5 @@
             <p> &copy; 2025 Esprit Brown. All rights reserved.</p>
         </div>
     </footer>
-</body>
+    </body>
 </html>

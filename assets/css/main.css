@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #b67b7f;
+		background-color: #dda5a5;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -4564,7 +4564,7 @@ input, select, textarea {
 		-webkit-overflow-scrolling: touch;
 		background: #ffffff;
 		box-shadow: none;
-		color: #212931;
+		color: #e8f3ff;
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -4643,7 +4643,7 @@ input, select, textarea {
 			}
 
 			#navPanel .close:hover {
-				color: #212931;
+				color: #0080ff;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -4687,3 +4687,5 @@ input, select, textarea {
 		}
 
 	}
+
+	
