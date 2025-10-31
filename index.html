@@ -10,164 +10,164 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<noscript><link rel="stylesheet" href="assets/css/main.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in" img src="images/CollageOfMyFavThings.jpeg" alt="Photo of Esprit's favourite things to do'">>
+<!-- Wrapper -->
+	<div id="wrapper">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>HELLO, I'M ESPRIT A THIRD YEAR PRESERVICE TEACHER<br /></h1>
-						<p>Here you'll learn all about me and my porfessional journey</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+<!-- Intro -->
+	<div id="intro">
+		<h1>HELLO, I'M ESPRIT A THIRD YEAR PRESERVICE TEACHER<br/></h1>
+		<p>Here you'll learn all about me and my porfessional journey</p>
+		<ul class="actions">
+			<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+		</ul>
+	</div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Esprit's Portfolio</a>
-					</header>
+<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="logo">Esprit's Teaching Portfolio</a>
+	</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-                			<li><a class="active" href="index.html">Home</a></li>
-                			<li><a href="about.html">About Page</a></li>
-                			<li><a href="teaching.html">Teaching Practice</a></li>
-                			<li><a href="projects.html">Project Showcase</a></li>
-                			<li><a href="resources.html">Resources</a></li>
-                			<li><a href="resume.html">Resume</a></li>
-                			<li><a href="contact.html">Contact Details</a></li>
-						</ul>
-					</nav>
+<!-- Nav -->
+	<nav id="nav">
+		<ul class="links">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About Page</a></li>
+            <li><a href="teaching.html">Teaching Practice</a></li>
+            <li><a href="projects.html">Project Showcase</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact Details</a></li>
+		</ul>
+	</nav>
 
 <!-- Main -->
 	<div id="main">
 	
 
-						<!-- Posts -->
-						 <!-- JavaScript Exercise for demonstrate string interpolation with an input box and button combination-->
+<!-- Posts -->
+<!-- JavaScript Exercise for demonstrate string interpolation with an input box and button combination-->
 <section class="posts">
     <h3>What is your name?</h3>
     <p id="greeting">Welcome to my portfolio!</p>
     <input id="usernameInput" class="input-spaced" type="text" placeholder="Enter your name">
-    <button id="setGreetingBtn" type="button">Set Greeting</button>
+    <button id="setGreetingBtn" type="button">Confirm</button>
 
 <script>
     function setGreeting() {
     const input = document.getElementById('usernameInput');
     const greeting = document.getElementById('greeting');
     const name = (input?.value || '').trim();
-    greeting.textContent = name ? `Welcome to my portfolio, ${name}!` 
-                                : 'Welcome to my portfolio!';
-    }
-    document.getElementById('setGreetingBtn').addEventListener('click',
-    setGreeting);
-</script>
+    	greeting.textContent = name ? `Welcome to my portfolio, ${name}!` 
+                                	: 'Welcome to my portfolio!';
+   	 }
+   	 document.getElementById('setGreetingBtn').addEventListener('click',
+   	 setGreeting);
+	</script>
+	</section>
+	<section class="posts">
+		<article>
+		<header>
+			<h2><a>What will you find<br />
+				on this site?</a></h2>
+		</header>
+		<ul style="font-size: medium;">
+			<li>About me</li>
+			<li>Projects I have created</li>
+			<li>Contct details</li>
+			<li>Teaching philosophy</li>
+		</ul>
+	</article>
+	<article>
+	<header>
+		<h2><a>Professional Journey<br /></a></h2>
+	</header>
+		<ol>
+			<li>Started university 2023</li>
+			<li>Started working as an SLSO at CAringbah high School 2023</li>
+			<li>First prac October at Lucas Heights Community School 2024</li>
+		</ol>
+	</article>
+		<article>
+	<header>
+		<h2><a href="about.html">WHO AM I?<br /></a></h2>
+	</header>
+		<a href="about.html"><img src="images/Rectangle photo with rounded courners of Student Teacher Esprit Brown smiling at the camera.png" alt="Photo of Esprit Brown smiling at the camera" width="300px" /></a>
+		<p>Passionate about creating a classroom environment where every student feels empowered to succeed and thrive.</p>
+		<ul class="actions special">
+			<li><a href="about.html" class="button">Learn more</a></li>
+		</ul>
+	</article>
+	<article>
+	<header>
+		<h2><a href="teaching.html">MY TEACHING PHILOSOPHY<br /></a></h2>
+	</header>
+		<a href="teaching.html" class="image fit"><img src="images/philosophyTeachingQuote.jpeg" alt="Quote- students dont care how much you know until you know how much you care: John Maxwell" /></a>
+		<p>What matters is that students gainconfidence as creators and problem solvers.</p>
+		<ul class="actions special">
+			<li><a href="teaching.html" class="button">Learn more</a></li>
+		</ul>
+	</article>
+	<article>
+	<header>
+		<h2><a href="projects.html">PROJECTS IVE MADE<br /></a></h2>
+	</header>
+		<a href="projects.html"><img src="images/FoodProject_AdeleMerchPackagedCaramelChocolateRecord.jpeg" alt="One of Esprits projects - Adele chocolate record" width="300px"/></a>
+		<p>TECH213 - Food Industries Food design project</p>
+		<ul class="actions special">
+			<li><a href="projects.html" class="button">Learn more</a></li>
+		</ul>
+	</article>
+	<article>
+	<header>
+		<h2><a href="resources.html">RESOURCES<br /></a></h2>
+	</header>
+		<a href="resources.html"><img src="images/imageOfAvaiableResources.png" alt="Image of avalaible resources" width="400px" /></a>
+		<p>The following resources are provided so that you can download and adapt for your work.</p>
+		<ul class="actions special">
+			<li><a href="resources.html" class="button">Learn more</a></li>
+		</ul>
+	</article>
+	<article>
+	<header>
+		<h2><a href="resume.html">RESUME<br /></a></h2>
+	</header>
+		<a href="resume.html"><img src="images/ResumeThumbNail.png" alt="Image of resume" width="200px"/></a>
+		<p>This document outlines my professional teaching experiences to date.</p>
+		<ul class="actions special">
+			<li><a href="resume.html" class="button">Learn more</a></li>
+		</ul>
+	</article>
+	<article>
+	<header>
+		<h2><a href="contact.html">CONTACT<br /></a></h2>
+	</header>
+		<a href="contact.html" class="image fit"><img src="images/contactpage.png" alt="Image of contact page" /></a>
+		<p>This page allows you to get in contact with me!</p>
+		<ul class="actions special">
+			<li><a href="contact.html" class="button">Learn more</a></li>
+		</ul>
+	</article>
 </section>
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a>What will you find<br />
-										on this site?</a></h2>
-									</header>
-									<ul style="font-size: medium;">
-										<li>About me</li>
-										<li>Projects I have created</li>
-										<li>Contct details</li>
-										<li>Teaching philosophy</li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a>Professional Journey<br /></a></h2>
-									</header>
-									<ol>
-										<li>Started university 2023</li>
-										<li>Started working as an SLSO at CAringbah high School 2023</li>
-										<li>First prac October at Lucas Heights Community School 2024</li>
-									</ol>
-								</article>
-								<article>
-									<header>
-										<h2><a href="about.html">WHO AM I?<br /></a></h2>
-									</header>
-									<a href="about.html"><img src="images/Rectangle photo with rounded courners of Student Teacher Esprit Brown smiling at the camera.png" alt="Photo of Esprit Brown smiling at the camera" width="300px" /></a>
-									<p>Passionate about creating a classroom environment where every student feels empowered to succeed and thrive.</p>
-									<ul class="actions special">
-										<li><a href="about.html" class="button">Learn more</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="teaching.html">MY TEACHING PHILOSOPHY<br /></a></h2>
-									</header>
-									<a href="teaching.html" class="image fit"><img src="images/philosophyTeachingQuote.jpeg" alt="Quote- students dont care how much you know until you know how much you care: John Maxwell" /></a>
-									<p>What matters is that students gainconfidence as creators and problem solvers.</p>
-									<ul class="actions special">
-										<li><a href="teaching.html" class="button">Learn more</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="projects.html">PROJECTS IVE MADE<br /></a></h2>
-									</header>
-									<a href="projects.html"><img src="images/FoodProject_AdeleMerchPackagedCaramelChocolateRecord.jpeg" alt="One of Esprits projects - Adele chocolate record" width="300px"/></a>
-									<p>TECH213 - Food Industries Food design project</p>
-									<ul class="actions special">
-										<li><a href="projects.html" class="button">Learn more</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="resources.html">RESOURCES<br /></a></h2>
-									</header>
-									<a href="resources.html"><img src="images/imageOfAvaiableResources.png" alt="Image of avalaible resources" width="400px" /></a>
-									<p>The following resources are provided so that you can download and adapt for your work.</p>
-									<ul class="actions special">
-										<li><a href="resources.html" class="button">Learn more</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="resume.html">RESUME<br /></a></h2>
-									</header>
-									<a href="resume.html"><img src="images/ResumeThumbNail.png" alt="Image of resume" width="200px"/></a>
-									<p>This document outlines my professional teaching experiences to date.</p>
-									<ul class="actions special">
-										<li><a href="resume.html" class="button">Learn more</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="contact.html">CONTACT<br /></a></h2>
-									</header>
-									<a href="contact.html" class="image fit"><img src="images/contactpage.png" alt="Image of contact page" /></a>
-									<p>This page allows you to get in contact with me!</p>
-									<ul class="actions special">
-										<li><a href="contact.html" class="button">Learn more</a></li>
-									</ul>
-								</article>
-							</section>
     <!-- This is the footer section for my page, in line with Semantic HTML -->
-    				<footer>
-						<div class="container">
-							<p> &copy; 2025 Esprit Brown. All rights reserved.</p>
-						</div>
-					</footer>
+ <footer>
+	<div class="container">
+		<p> &copy; 2025 Esprit Brown. All rights reserved.</p>
+	</div>
+</footer>
 	
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
 </html>
